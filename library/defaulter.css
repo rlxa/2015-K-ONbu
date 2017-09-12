@@ -1,0 +1,86 @@
+/* B A S E
+for overall defaults*/
+	html, body {height: 100%; height: 100vh; width: 100%; width: 100vw; overflow: hidden;}
+	* {margin:0; padding:0; list-style-type:none;}
+	body {background-color: #A8755B;}
+	body,td,th {font-family: 'Ubuntu', 'Lato', 'Open Sans', Helvetica, Arial, sans-serif; font-size: 1em; color: #303030;}
+	a {font-size: 100%; cursor: pointer;}
+	a:link, a:visited {text-decoration: none; color: #c45319;}
+	a:hover, a:focus {color: #782800; text-decoration: none; transition:.2s;}
+	a:active  {text-decoration: line-through;}
+	h1, h2 {font-size: large;}
+	h3, h4, h5, h6 {font-size: medium;}
+	fieldset {border: 0; margin: 1em;}
+	input, textarea {padding: 2px;}
+	textarea {resize: vertical; min-height: 7em; max-height: 20em;}
+	label, legend {display: none;}
+	img {border-radius: 5px;}
+
+.loading-container {position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background-color: #ffffff;}
+
+/* T E M P L A T E
+for heading, body, & footer */
+	.clear-both {clear: both;}
+	.page-wrap {height: 100%; width: 100%; height: 100vh; width: 100vw;}
+	#parallax-back {background: url("images/parallax/bg-back.png") no-repeat center center fixed;
+		-webkit-background-size: 110%; -moz-background-size: 110%; -o-background-size: 110%; background-size: 110%;}
+	#parallax-mid {background: url("images/parallax/bg-middle.png") no-repeat center center fixed;
+		-webkit-background-size: 110%; -moz-background-size: 110%; -o-background-size: 110%; background-size: 110%;}
+	#parallax-front {background: url("images/parallax/bg-front.png") no-repeat center center fixed;
+		-webkit-background-size: 110%; -moz-background-size: 110%; -o-background-size: 110%; background-size: 110%;}
+	#parallax-shade {background-color: #ffffff; background-color: rgba(255,255,255,0.6);}
+
+/* M A I N - C O N T E N T */
+		.main-content {float: left; height: 95vh; height: 95%; width: 70vw; width: 70%; margin: auto; position: relative;}
+			.main-container {padding: 1em 0 1em 3em; height: 92%; overflow-x: hidden; overflow-y: auto;}
+			.img-splash, .img-splash h1 {text-align: center; font-size: 200%;}
+			.img-splash img {display: block; margin: auto;}
+			.sub-header {clear: both; width: auto; position: relative; padding: 1em;}
+			.divider {clear: both; width: auto; margin: 0 auto; border-top-width: 1px; border-top-style: solid; border-top-color: #616161; padding: .1em 0; margin: .25em 0;}
+			.intro-box, .character, .episode, .music {clear: both; width: auto; height: auto; padding: 1em 0 .5em 0;}
+				.intro-box img {}
+				.sub-title {position: relative; clear: both; float: right; width: auto; height: auto; text-align: right; padding: .5em 0;}
+				.music img, .character img {width: 250px;}
+					.pic {float: left; position: relative; width: auto;}
+					.desc {clear: both; position: relative; padding: 1em; width: auto;}
+					.band-member {padding: .5em;}
+					.tracklist {padding: 1em 0 1em 2em; overflow: auto; max-height: 25em; width: auto; border: 1px;}
+						.tracklist li {margin: 0 1em;}
+						.tracklist ul {margin: .5em 0;}
+					.sub-footer {float: right; clear: both; padding: 1em;}
+
+			.links-container, .about-contact-container {clear: both; margin: 0 1em;}
+				.links-source {float: left; height: 60px; width: auto; min-width: 200px; max-width: 200px; margin: .2em;}
+					.links-source img {height: 55px; opacity:1; transition:.2s; display: block; margin: auto;}
+					.links-source img:hover {height: 60px; display: block; margin: auto;}
+
+			.about, .contact, .other-websites {clear: both; margin: 1em;}
+				.field-box {text-align: center; background-color: rgba(255,255,255,.8); padding: .5em; width: 29em; height: auto; line-height: 1.5em; border-radius: 3px;}
+					.contact-input {text-align: center;}
+					.link-box {float: left; margin:.2em; height: 100px;}
+					.links-image {display: block; height: 60px; min-width: 250px; transition:.2s; border-radius: 5px;}
+					.links-image:hover {height: 75px; width: 250px; margin: auto;}
+					.links-image span {display: none;}
+					#link-carbonmade {background: url("images/about-contact/carbonmade-b.png") no-repeat center center;}
+					#link-carbonmade:hover {background: url("images/about-contact/carbonmade-a.png") no-repeat center center;}
+					#link-tumblr {background: url("images/about-contact/tumblr-b.png") no-repeat center center;}
+					#link-tumblr:hover {background: url("images/about-contact/tumblr-a.png") no-repeat center center;}
+
+					.mail-success {padding: 1em; margin-bottom: 0.75rem; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); color: #468847; background-color: #dff0d8;
+						border: 1px solid #d6e9c6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+					.mail-error {padding: 1em; margin-bottom: 0.75rem; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); color: #b94a48; background-color: #f2dede;
+						border: 1px solid rgba(185, 74, 72, 0.3); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+
+			.main-copyright {height: auto; font-size: .75em; text-align: center; padding: 1em 0; position: absolute; left: 0; right: 0; bottom: 0;}
+
+/* S I D E B A R */
+	.side-bar {float: right; height: 100vh; height: 100%; width: 25vw; width: 25%; margin: auto; padding: 0 1.5em; position: relative; overflow-x: hidden; overflow-y: auto;}
+	.side-bar>nav>ul {padding-bottom: 3em;}
+		.list-control {margin: 1em; padding-top: 1.5em;}
+			.list-control a {border: 1px solid #303030; padding: .2em .4em; transition:.25s}
+			.list-control a:hover {background-color:#ffffff; color:#782800;}
+			.list-control a:active {background-color:#dedede; color: #c45319; text-decoration: none; transition: 0s;}
+		.side-container {padding: 1em; margin: auto;}
+			.side-sub-container {padding: .5em; margin: auto;}
+				.click-list {color: #c45319; clear: both; float: left; width: auto;}
+				.open-list {padding-left: .5em; clear: both; display: none;}
